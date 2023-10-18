@@ -1,0 +1,17 @@
+.header{
+    text-align: center;
+    background-color: aquamarine;
+    color: red;
+}
+
+.main{
+    text-align: center;
+    color: blue;
+}
+
+.footer{
+    text-align: center;
+    background-color: aquamarine;
+    color: red;
+    position: relative;
+}

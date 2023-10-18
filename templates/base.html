@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <div>
+        <div class="header">
+            <h1>Authentication and Authorization</h1>
+            <a href="{% url 'index' %}">HOME</a>
+            <a href="{% url 'app1:users' %}">USERS</a>
+            <a href="{% url 'app1:signup' %}">SIGNUP</a>
+            <a href="{% url 'app1:login' %}">LOGIN</a>
+            <a href="{% url 'app1:logout' %}">LOGOUT</a>
+            <a href="{% url 'app1:changepwd1' %}">Changepwd1</a>
+            <a href="{% url 'app1:changepwd2' %}">Changepwd2</a>
+
+        </div>
+        <div class="main">
+            {% block main %}
+            {% endblock main %}
+        </div>
+        <div class="footer">
+            <h1>Thanks for visiting</h1>
+        </div>
+    </div>
+</body>
+</html>
